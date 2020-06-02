@@ -113,6 +113,11 @@ AFRAME.registerComponent('arjs-anchor', {
                 markerParameters.type = _this.data.type
                 markerParameters.patternUrl = '../myApp/marker.patt';
                 markerParameters.markersAreaEnabled = false
+                }
+            else if (_this.data.preset === 'meep') {
+                    markerParameters.type = 'pattern'
+                    markerParameters.patternUrl = THREEx.ArToolkitContext.baseURL + 'examples/marker-training/examples/pattern-files/pattern-hiro.patt'
+                    markerParameters.markersAreaEnabled = false
             }
 
             markerParameters.smooth = _this.data.smooth;
