@@ -5079,7 +5079,7 @@ AFRAME.registerComponent('arjs-anchor', {
                 }
             } else if (_this.data.type === 'pattern') {
                 markerParameters.type = _this.data.type
-                markerParameters.patternUrl = _this.data.patternUrl;
+                markerParameters.patternUrl = '../myApp/marker.patt';
                 markerParameters.markersAreaEnabled = false
             }
 
